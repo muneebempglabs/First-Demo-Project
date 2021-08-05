@@ -6,10 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header';
 import HomePage from './Components/HomePage';
+import Basic from './Components/Basic';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomePage />
+    {/* <HomePage /> */}
     <Basic />
   </React.StrictMode>,
   document.getElementById('root')
