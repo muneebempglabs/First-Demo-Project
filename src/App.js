@@ -1,25 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react';
+import Calculator from './Components/Calculator';
+import {add} from './Functions';
+import {subtract} from './Functions';
+import {multiply} from './Functions';
+import {divide} from './Functions';
 
-function App() {
+
+class App extends Component{
+  render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Calculator yourFunc = {add} a = {10} b = {20}/>
+      <Calculator yourFunc = {subtract} a = {20} b = {10}/>
+      <Calculator yourFunc = {multiply} a = {10} b = {20}/>
+      <Calculator yourFunc = {divide} a = {20} b = {10}/>
     </div>
   );
+}
 }
 
 export default App;
